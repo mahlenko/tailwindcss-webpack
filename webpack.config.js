@@ -24,17 +24,20 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: "[name].css",
-      chunkFilename: "[id].css"
+      chunkFilename: "[id].css",
     }),
 
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src', 'index.html'),
       filename: 'index.html',
+      minify: {
+        collapseWhitespace: true
+      },
     }),
 
     // Извлекает стили из css файлов в документ в <style>
     // Например, полезно для верстки email писем.
-    //new HTMLInlineCSSWebpackPlugin(),
+    new HTMLInlineCSSWebpackPlugin(),
 
     new BrowserSyncPlugin({
       host: 'localhost',
