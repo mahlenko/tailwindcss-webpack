@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts */
+
+@font-face {
+    font-family: Funkturm;
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: local('Funkturm'),
+         url('asset/fonts/Funkturm.otf')
+         format("opentype");
+}
+
+@font-face {
+    font-family: Jost;
+    font-style: auto;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Jost'),
+        url('asset/fonts/Jost-Regular.ttf')
+        format("truetype");
+}
+
+@font-face {
+    font-family: Jost;
+    font-style: auto;
+    font-weight: 500;
+    font-display: swap;
+    src: local('Jost'),
+    url('asset/fonts/Jost-Medium.ttf')
+    format("truetype");
+}
+
+/* Base */
+
+body {
+    font-family: Jost, sans-serif;
+    font-size: 18px
+}
+
+.header-1 {
+    @apply text-4xl uppercase font-bold;
+    font-family: Funkturm, sans-serif;
+}
+
+.header-2 {
+    @apply text-3xl uppercase font-bold;
+    font-family: Funkturm, sans-serif;
+}
+
+.header__link {
+    @apply text-red uppercase underline font-bold;
+}
+
+.button {
+    @apply inline-block bg-btn text-white py-2.5 px-8 uppercase text-xl font-medium rounded-2xl;
+}
+
+/* Template */
+
+.before-blob {
+    @apply relative;
+}
+
+.before-blob:before {
+    @apply block absolute p-8 left-0 bg-no-repeat bg-cover;
+    background-image: url("asset/images/block-blob.png");
+    background-position: left center;
+    content: "";
+    height: 145%;
+    width: 35%;
+    top: -30%;
+}
+
+.bg-body-image {
+    background-image: url("asset/images/bg-body.png");
+}
