@@ -8,6 +8,113 @@
     <title>Document</title>
 </head>
 <body class="antialiased min-h-screen bg-white">
-    <h1 class="text-center text-2xl">Hello</h1>
+<main class="bg-flax max-w-2xl mx-auto min-h-screen">
+    <!-- Header container -->
+    <header class="flex flex-col gap-y-4">
+        <nav>
+            <ul class="flex justify-between gap-x-4 py-4 px-8">
+                <li><a href="#" class="header__link">Events</a></li>
+                <li><a href="#" class="header__link">Gift & Experiences</a></li>
+                <li><a href="#" class="header__link">What's on</a></li>
+            </ul>
+        </nav>
+
+        <img src="asset/images/logo.png" alt="Alba logotype" class="mx-auto my-8 h-28">
+    </header>
+
+    <!-- Poster container -->
+    <section class="poster-container">
+        <img src="asset/images/poster.png" alt="poster">
+    </section>
+
+    <!-- Main information -->
+    <section class="flex flex-col gap-y-4 p-8 pb-16 items-center text-center bg-body-image bg-no-repeat bg-cover bg-center">
+        <h1 class="header-1 text-red">Lorem ipsum dolor sit amet</h1>
+
+        <img src="asset/images/blob.png" class="h-10" alt="">
+
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                Risus commodo viverra maecenas accumsan lacus vel facilisis.
+            </p>
+        </div>
+
+        <p>
+            <a href="javascript:void(0);" class="button">Book now</a>
+        </p>
+    </section>
+
+    <!--  -->
+    <section class="flex gap-x-6 bg-orange py-8 pr-8 text-white before-blob">
+        <img src="asset/images/photo-place.png"
+             class="w-[45%] z-10"
+             alt="">
+
+        <div class="flex flex-col items-start gap-y-4">
+            <h2 class="header-2">Lorem ipsum dolor sit amet</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                Risus commodo viverra maecenas accumsan lacus vel facilisis.
+            </p>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="flex flex-col gap-y-4 p-8 pt-24 text-center bg-no-repeat bg-body-image bg-cover bg-center">
+        <p>
+            <a href="javascript:void(0);" class="button">Book now</a>
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit:<br>
+            <a href="#" class="underline">Lorem ipsum dolor sit amet</a><br>
+            Lorem ipsum
+        </p>
+
+        <ul class="flex items-center justify-center gap-x-8">
+            <!-- instagram -->
+            <li>
+                <a href="#" class="flex items-center justify-center rounded-full border-2 border-orange grow-0 w-10 h-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" stroke-width="1.5" stroke="none" class="w-8 fill-orange">
+                        <g>
+                            <path d="M22.3,8.4c-0.8,0-1.4,0.6-1.4,1.4c0,0.8,0.6,1.4,1.4,1.4c0.8,0,1.4-0.6,1.4-1.4C23.7,9,23.1,8.4,22.3,8.4z"/>
+                            <path d="M16,10.2c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S19.3,10.2,16,10.2z M16,19.9c-2.1,0-3.8-1.7-3.8-3.8   c0-2.1,1.7-3.8,3.8-3.8c2.1,0,3.8,1.7,3.8,3.8C19.8,18.2,18.1,19.9,16,19.9z"/>
+                            <path d="M20.8,4h-9.5C7.2,4,4,7.2,4,11.2v9.5c0,4,3.2,7.2,7.2,7.2h9.5c4,0,7.2-3.2,7.2-7.2v-9.5C28,7.2,24.8,4,20.8,4z M25.7,20.8   c0,2.7-2.2,5-5,5h-9.5c-2.7,0-5-2.2-5-5v-9.5c0-2.7,2.2-5,5-5h9.5c2.7,0,5,2.2,5,5V20.8z"/>
+                        </g>
+                    </svg>
+                </a>
+            </li>
+
+            <!-- facebook -->
+            <li>
+                <a href="#" class="flex items-center justify-center rounded-full border-2 border-orange grow-0 w-10 h-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" stroke-width="1.5" stroke="none" class="w-8 fill-orange">
+                        <path d="M12.6,16.1v11.6c0,0.2,0.1,0.3,0.3,0.3h4.6c0.2,0,0.3-0.1,0.3-0.3V15.9h3.4c0.2,0,0.3-0.1,0.3-0.3l0.3-3.6  c0-0.2-0.1-0.3-0.3-0.3h-3.7V9.2c0-0.6,0.5-1.1,1.2-1.1h2.6C21.9,8.1,22,8,22,7.8V4.3C22,4.1,21.9,4,21.7,4h-4.4  c-2.6,0-4.7,1.9-4.7,4.3v3.4h-2.3c-0.2,0-0.3,0.1-0.3,0.3v3.6c0,0.2,0.1,0.3,0.3,0.3h2.3V16.1z"/>
+                    </svg>
+                </a>
+            </li>
+
+            <!-- link -->
+            <li>
+                <a href="#" class="flex items-center justify-center rounded-full border-2 border-orange grow-0 w-10 h-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 stroke-orange">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </section>
+</main>
 </body>
 </html>
